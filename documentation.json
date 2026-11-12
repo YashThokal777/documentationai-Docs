@@ -1,74 +1,34 @@
 {
-  "name": "Starter Kit",
+  "name": "Inkpost",
+  "initialRoute": "getting-started/introduction",
   "colors": {
-    "light": {
-      "brand": "#F97316"
-    },
-    "dark": {
-      "brand": "#FDBA74"
-    }
+    "light": { "brand": "#0F766E" },
+    "dark": { "brand": "#5EEAD4" }
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Guides",
         "icon": "book",
         "groups": [
           {
-            "group": "Start Here",
+            "group": "Getting Started",
             "icon": "rocket",
             "pages": [
-              {
-                "title": "Introduction",
-                "path": "introduction",
-                "icon": "home"
-              },
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
-              },
-              {
-                "title": "Components",
-                "path": "components",
-                "icon": "code"
-              }
+              { "title": "Introduction", "path": "getting-started/introduction", "icon": "star" },
+              { "title": "Quickstart", "path": "getting-started/quickstart", "icon": "zap" },
+              { "title": "Authentication", "path": "getting-started/authentication", "icon": "key" }
             ]
           },
           {
-            "group": "Components",
-            "icon": "layers",
+            "group": "Guides",
+            "icon": "book-open",
             "pages": [
-              {
-                "title": "Images",
-                "path": "components/images",
-                "icon": "image"
-              },
-              {
-                "title": "Cards",
-                "path": "components/cards",
-                "icon": "square"
-              },
-              {
-                "title": "Code",
-                "path": "components/code",
-                "icon": "code"
-              },
-              {
-                "title": "Callouts",
-                "path": "components/callouts",
-                "icon": "message-square"
-              },
-              {
-                "title": "Steps",
-                "path": "components/steps",
-                "icon": "list-ordered"
-              },
-              {
-                "title": "Tabs",
-                "path": "components/tabs",
-                "icon": "columns"
-              }
+              { "title": "Send your first email", "path": "guides/send-email", "icon": "send" },
+              { "title": "Attachments", "path": "guides/attachments", "icon": "paperclip" },
+              { "title": "Webhooks and events", "path": "guides/events", "icon": "webhook" },
+              { "title": "Plans and limits", "path": "guides/plans-and-limits", "icon": "gauge" },
+              { "title": "FAQ", "path": "guides/faq", "icon": "circle-help" }
             ]
           }
         ]
@@ -78,74 +38,11 @@
         "icon": "code",
         "groups": [
           {
-            "group": "Overview",
-            "icon": "file-text",
+            "group": "REST API",
+            "openapi": "api-reference/openapi.yaml",
             "pages": [
-              {
-                "title": "Authentication",
-                "path": "authentication",
-                "icon": "lock"
-              }
+              { "title": "Overview", "path": "api-reference/overview" }
             ]
-          },
-          {
-            "group": "Sample Endpoints",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
-        "tab": "Help Center",
-        "icon": "help-circle",
-        "pages": [
-          {
-            "title": "Help Center",
-            "path": "help-center",
-            "icon": "home"
-          },
-          {
-            "group": "FAQs",
-            "icon": "help-circle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Documentation Source",
-                "path": "help-center/faq/getting-started"
-              }
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "icon": "alert-triangle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Page Missing in Sidebar",
-                "path": "help-center/troubleshooting/install-error"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "book-open",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Create Your First Page",
-                "path": "help-center/guides/setup-project"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": [
-          {
-            "title": "Changelog",
-            "path": "changelog",
-            "icon": "history"
           }
         ]
       }
